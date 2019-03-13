@@ -9,12 +9,12 @@ const goods = [
     { title: 'Shoes', price: 250 }
 ];
 
-
-const renderGoodsItem = (title, price) =>
+const value = 250;
+const renderGoodsItem = (title, price = value) =>
     `<div class="goods-item">
         <h3>${title}</h3>
         <p>${price}</p>
-        <div class="button">Купить</div>
+        <div class="button">Добавить</div>
     </div>`;
 
 
@@ -27,3 +27,17 @@ const renderGoodsList = list => {
 window.onload = () => {
     renderGoodsList(goods);
 };
+let GoodsList = document.querySelector('.goods-list');
+GoodsList.sumAllItem = function () {
+    let sum = 0;
+    for (let i in goods) {
+        if (goods[i].price) {
+            sum += goods[i].price
+        } else {
+            sum += valuedddddd
+        }
+    }
+    return sum
+};
+
+console.log(GoodsList.sumAllItem())
