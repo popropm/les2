@@ -22,7 +22,13 @@ main .goods-list > div {
     height: 145px;
 
 }
-
+main .goods-list div .img {
+    background: #c7aa45;
+    border-radius: 10px;
+    width: 115px;
+    height: 65px;
+    margin: auto;
+}
 main .goods-list > div:hover {
     border: 1px solid #ff1842;
 

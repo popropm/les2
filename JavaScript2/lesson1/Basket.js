@@ -1,14 +1,16 @@
 class Basket {
-constructor(item){
-this.items = item;
+    constructor(items = []) {
+        this.items = items;
     }
-    bask (items = []) {
-        this.items = this.items.concat(items)
-    };
-    removeItems  (items = []) {
 
+    addItems(items = []) {
+        this.items = this.items.concat(items);
     };
-    getCost  () {
-        return this.cost
+
+    removeItems(items = []) {
+    };
+
+    getItems() {
+        return this.items
     };
 }

@@ -12,9 +12,11 @@ const goods = [
 const value = 250;
 const renderGoodsItem = (title, price = value) =>
     `<div class="goods-item">
+<div class="img"></div>
         <h3>${title}</h3>
         <p>${price}</p>
         <div class="button">  Добавить</div>
+       
     </div>`;
 
 
