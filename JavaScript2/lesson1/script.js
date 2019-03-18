@@ -61,7 +61,7 @@ xhr = new XMLHttpRequest();
 xhr = new ActiveXObject( "Microsoft.XMLHTTP" );
 }
      xhr.onreadystatechange = function (){
-         if(xhr.readyState === 200){
+         if(xhr.readyState === 400){
              resolve(xhr.responseText);
          }
      }
