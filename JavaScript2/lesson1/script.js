@@ -16,6 +16,7 @@ const renderGoodsItem = (title, price = value) =>
         <h3>${title}</h3>
         <p>${price}</p>
         <div class="button">  Добавить</div>
+        <div class="button">  Добавить</div>
        
     </div>`;
 
